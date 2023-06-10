@@ -3,16 +3,17 @@ import {
   StatisticText,
   StatisticCounter,
 } from './StatisticItem.styled';
-import { IconContext } from "react-icons";
+import { IconContext } from 'react-icons';
 
 export const StatisticItem = ({ total, title, icon }) => {
-	console.log(icon)
-	return <StatisticBox>
-		<IconContext.Provider value={{ size: "40px", }}>
-			{icon}
-		</IconContext.Provider>
+  return (
+    <StatisticBox>
+      <IconContext.Provider value={{ size: '40px' }}>
+        {icon}
+      </IconContext.Provider>
 
-    <StatisticCounter>{total}</StatisticCounter>
-    <StatisticText>{title}</StatisticText>
-  </StatisticBox>;
+      <StatisticCounter>{total}</StatisticCounter>
+      <StatisticText>{title}</StatisticText>
+    </StatisticBox>
+  );
 };
