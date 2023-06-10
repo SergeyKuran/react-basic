@@ -10,6 +10,7 @@ import {
 
 import Article from '../../data/article';
 import data from '../../data/data';
+import forbes from '../../data/forbes.json';
 
 export const App = () => {
   return (
@@ -31,12 +32,12 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-				<Statistics title="Main Statistics" stats={ data } />
+        <Statistics title="Main Statistics" stats={data} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
         </Heading>
-        <ForbesList />
+        <ForbesList list={forbes} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 4
